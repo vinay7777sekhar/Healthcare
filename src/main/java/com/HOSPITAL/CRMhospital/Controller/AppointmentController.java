@@ -17,6 +17,9 @@ public class AppointmentController
 	@Autowired
 	private AppointmentDao dao;
 	
+	@Autowired
+	private String Name;
+	
 	@PostMapping
   public void savecontroller(@RequestBody Appointment ap)
   {
